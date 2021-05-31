@@ -65,12 +65,12 @@
       <v-container class="py-2 my-12 container" fluid>
         <v-row align="center" justify="center">
           <transition name="fadeOut">
-            <v-col v-if="card" sm="10" md="5" xl="3">
+            <v-col v-if="card" sm="10" md="6" lg="5" xl="3">
               <CharacterCard :characterInfo="character" />
             </v-col>
           </transition>
           <transition name="zoomOut">
-            <v-col v-if="portal" sm="10" md="5" xl="3">
+            <v-col v-if="portal" sm="10" md="6" lg="5" xl="3">
               <Portal />
             </v-col>
           </transition>
@@ -122,11 +122,11 @@ export default {
             this.snackbar = true;
           });
       } else {
-        this.name = "";
         setTimeout(() => {
           this.portal = true;
         }, 800);
       }
+      this.name = "";
     },
     selectItem(item) {
       this.drawer = false;
@@ -134,7 +134,7 @@ export default {
       this.portal = false;
       setTimeout(() => {
         this.card = true;
-      }, 800);
+      }, 700);
     },
   },
 };

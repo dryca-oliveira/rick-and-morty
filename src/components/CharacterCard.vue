@@ -2,11 +2,15 @@
   <v-card dark class="animation card" min-height="352" width="620px">
     <v-card-title
       style="background-color: #000"
-      class="headline white--text title text-md-h4"
+      class="headline white--text title text-md-h5 text-lg-h4"
       >{{ characterInfo.name }}
     </v-card-title>
     <v-row>
-      <v-col cols="12" md="6" class="pl-10 pb-0 subtitle-1 infos">
+      <v-col
+        cols="12"
+        md="6"
+        class="pl-10 pb-0 subtitle-2 text-lg-subtitle-1 infos"
+      >
         <div class="py-2 d-flex">
           <v-icon :color="color" small>mdi mdi-checkbox-blank-circle </v-icon>
           <span class="px-1"> Status: </span> {{ characterInfo.status }}
