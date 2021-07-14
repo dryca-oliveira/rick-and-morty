@@ -88,7 +88,7 @@ export default {
   },
   methods: {
     async updateCard() {
-      let ids;
+      const ids;
       this.characterInfo.episode.forEach((element) => {
         let id = element.substring(40);
         this.episodesId.push(id);
